@@ -1,2 +1,2 @@
 # FE_ios
-🐱🐶펫다 - FE ios (Swift)
+🐱🐶멍냥이의 하루 - FE ios (Swift)
