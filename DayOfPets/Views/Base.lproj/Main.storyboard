@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xkw-Z5-2jl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,35 +23,54 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayOfPets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage" id="BYZ-38-t0r" customClass="ViewController" customModule="DayOfPets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Vs9-e8-gpU">
-                                <rect key="frame" x="24" y="133" width="345" height="134"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-Oa-7Jp">
+                                <rect key="frame" x="24" y="177" width="345" height="145"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-FC-158">
-                                        <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="100.33333333333333"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리 반려동물을 위한" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neD-US-Sef">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="36.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기록습관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-XA-OaH">
+                                        <rect key="frame" x="0.0" y="36.333333333333343" width="345" height="36.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-VD-Wu3">
+                                        <rect key="frame" x="0.0" y="72.666666666666657" width="345" height="36"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-CQ-Jez">
-                                                <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="100.33333333333333"/>
-                                                <string key="text">우리 반려동물을 위한
-기록습관
-펫다이어리에</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펫다이어리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-Lv-12t">
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="36"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0U-PZ-mj4">
+                                                <rect key="frame" x="121" y="0.0" width="224" height="36"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
                                                 <color key="textColor" name="Gray_8"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오신것을 환영해요 🐶 🐱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGT-LR-4dT">
-                                        <rect key="frame" x="0.0" y="100.33333333333334" width="271" height="33.666666666666657"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오신것을 환영해요 🐶 🐱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1D-ML-e06">
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="345" height="36.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
                                         <color key="textColor" name="Gray_8"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="AnJ-0u-9mn"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="145" id="WkA-7z-gdL"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-Zh-tXQ">
                                 <rect key="frame" x="19" y="717" width="355" height="56"/>
@@ -65,9 +84,9 @@
                                 <state key="normal" title="초대코드 입력하기"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-oF-kjH">
-                                <rect key="frame" x="19" y="410" width="355" height="128"/>
+                                <rect key="frame" x="19" y="410.66666666666669" width="355" height="128.00000000000006"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSP-c0-fi2">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSP-c0-fi2">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9jd-GT-aYp">
@@ -80,7 +99,7 @@
                                                             <constraint firstAttribute="height" constant="22.18" id="eUF-2s-vdG"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오로 로그인하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-q1-jMo">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오로 시작하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-q1-jMo">
                                                         <rect key="frame" x="25" y="1.3333333333333144" width="256" height="19.333333333333332"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
                                                         <color key="textColor" red="0.25882352939999997" green="0.15686274510000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,7 +148,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="BXM-Zv-OIC">
-                                <rect key="frame" x="107.00000000000001" y="554" width="179.33333333333337" height="15.666666666666629"/>
+                                <rect key="frame" x="107.00000000000001" y="554.66666666666663" width="179.33333333333337" height="15.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud8-DY-pyO">
                                         <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="15.666666666666666"/>
@@ -137,7 +156,7 @@
                                         <color key="textColor" name="Gray_7"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-Zn-byd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-Zn-byd">
                                         <rect key="frame" x="134.33333333333334" y="0.0" width="45" height="15.666666666666666"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="13"/>
                                         <color key="textColor" name="Gray_8"/>
@@ -149,41 +168,419 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BXM-Zv-OIC" firstAttribute="top" secondItem="Vs9-e8-gpU" secondAttribute="bottom" constant="287" id="2Cn-qi-Hwk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fvf-Zh-tXQ" secondAttribute="bottom" constant="45" id="4CE-zR-EQI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vs9-e8-gpU" secondAttribute="trailing" constant="24" id="5Ha-ZN-Wnj"/>
-                            <constraint firstItem="Vs9-e8-gpU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="8pk-ef-5FH"/>
-                            <constraint firstItem="BXM-Zv-OIC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ea8-2P-N5d"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="centerY" secondItem="Vs9-e8-gpU" secondAttribute="centerY" constant="545" id="QnP-pz-S4J"/>
+                            <constraint firstItem="BXM-Zv-OIC" firstAttribute="centerX" secondItem="yhB-oF-kjH" secondAttribute="centerX" id="Ea8-2P-N5d"/>
+                            <constraint firstItem="Nv3-Oa-7Jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="QSZ-Y8-0mM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yhB-oF-kjH" secondAttribute="trailing" constant="19" id="TkT-Cd-24x"/>
                             <constraint firstItem="fvf-Zh-tXQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yr5-4H-WZN"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="fDe-sw-W8v"/>
+                            <constraint firstItem="Nv3-Oa-7Jp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="aDR-RM-5qv"/>
+                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="19" id="fDe-sw-W8v"/>
                             <constraint firstItem="BXM-Zv-OIC" firstAttribute="top" secondItem="yhB-oF-kjH" secondAttribute="bottom" constant="16" id="lSJ-F3-kaP"/>
                             <constraint firstItem="yhB-oF-kjH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="m8x-aE-9Rb"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-19" id="qUK-bJ-U4d"/>
-                            <constraint firstItem="Vs9-e8-gpU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="zwS-5u-asE"/>
+                            <constraint firstItem="yhB-oF-kjH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="410.66666666666674" id="mSJ-Iy-ujl"/>
+                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-19" id="qUK-bJ-U4d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nv3-Oa-7Jp" secondAttribute="trailing" constant="24" id="qVC-7U-IJs"/>
+                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="centerX" secondItem="Nv3-Oa-7Jp" secondAttribute="centerX" id="xbI-Ri-btZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yeF-iW-yHI"/>
                     <connections>
-                        <outlet property="emailLoginBtn" destination="db2-Ea-Y73" id="IvN-tK-UZ0"/>
+                        <outlet property="emailLoginBtn" destination="db2-Ea-Y73" id="9hk-KD-R5h"/>
+                        <outlet property="invitationCodeBtn" destination="fvf-Zh-tXQ" id="z3n-fS-3Gp"/>
+                        <outlet property="kakaoLoginBtn" destination="qSP-c0-fi2" id="VFy-jR-70g"/>
+                        <outlet property="signUpBtn" destination="JFr-Zn-byd" id="qSE-4P-zrB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-2"/>
+            <point key="canvasLocation" x="1023.6641221374045" y="-9.1549295774647899"/>
+        </scene>
+        <!--Email Login View Controller-->
+        <scene sceneID="YH3-Oe-OGr">
+            <objects>
+                <viewController storyboardIdentifier="emailLoginPage" modalPresentationStyle="fullScreen" id="lRZ-ep-566" customClass="EmailLoginViewController" customModule="DayOfPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWS-ZL-geJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rV2-QM-mSt">
+                                <rect key="frame" x="24" y="133" width="345" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리 반려동물을 위한" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-nD-2T3">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="36.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기록습관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI3-bv-yzf">
+                                        <rect key="frame" x="0.0" y="36.333333333333343" width="345" height="36.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwE-sJ-N1g">
+                                        <rect key="frame" x="0.0" y="72.666666666666657" width="345" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펫다이어리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHc-Ef-Oeu">
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="36"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk8-hV-Pbp">
+                                                <rect key="frame" x="121" y="0.0" width="224" height="36"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오신것을 환영해요 🐶 🐱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-kZ-9rX">
+                                        <rect key="frame" x="0.0" y="108.66666666666666" width="345" height="36.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="4pG-6o-G3z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="BIX-Ag-pyv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h3Z-Nt-WWS">
+                                <rect key="frame" x="24" y="358" width="345" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gUi-z2-IUk">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSL-tp-pKa">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="Gray_7"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5K9-Mc-rlS">
+                                                <rect key="frame" x="0.0" y="15.666666666666689" width="345" height="34.333333333333343"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GEq-ud-jbk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OrK-Co-s0H">
+                                        <rect key="frame" x="0.0" y="70" width="345" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX7-NU-DsT">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="Gray_7"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Zr-9e-BS9">
+                                                <rect key="frame" x="0.0" y="15.666666666666689" width="345" height="34.333333333333343"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="send" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7Co-NH-ryI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-gh-GDY">
+                                <rect key="frame" x="24" y="518" width="345" height="60"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="sJ1-M8-tm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="loginBtnTapped:" destination="lRZ-ep-566" eventType="touchUpInside" id="GOe-XM-O1K"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="sd8-yp-TEb">
+                                <rect key="frame" x="107.00000000000001" y="598" width="179.33333333333337" height="15.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-35-tNs">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="15.666666666666666"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                        <color key="textColor" name="Gray_7"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-QV-1fU">
+                                        <rect key="frame" x="134.33333333333334" y="0.0" width="45" height="15.666666666666666"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="13"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mwu-tp-EGf"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fLG-gh-GDY" firstAttribute="top" secondItem="h3Z-Nt-WWS" secondAttribute="bottom" constant="40" id="3Wa-LI-dRL"/>
+                            <constraint firstItem="h3Z-Nt-WWS" firstAttribute="top" secondItem="rV2-QM-mSt" secondAttribute="bottom" constant="80" id="BRS-UK-rID"/>
+                            <constraint firstItem="sd8-yp-TEb" firstAttribute="top" secondItem="fLG-gh-GDY" secondAttribute="bottom" constant="20" id="HL0-tP-isv"/>
+                            <constraint firstItem="rV2-QM-mSt" firstAttribute="leading" secondItem="Mwu-tp-EGf" secondAttribute="leading" constant="24" id="Q3x-t9-5Wk"/>
+                            <constraint firstItem="Mwu-tp-EGf" firstAttribute="trailing" secondItem="rV2-QM-mSt" secondAttribute="trailing" constant="24" id="aAJ-0T-uvP"/>
+                            <constraint firstItem="rV2-QM-mSt" firstAttribute="top" secondItem="Mwu-tp-EGf" secondAttribute="top" constant="74" id="iRB-RC-3CR"/>
+                            <constraint firstItem="fLG-gh-GDY" firstAttribute="leading" secondItem="Mwu-tp-EGf" secondAttribute="leading" constant="24" id="leh-Kh-85I"/>
+                            <constraint firstItem="sd8-yp-TEb" firstAttribute="centerX" secondItem="pWS-ZL-geJ" secondAttribute="centerX" id="pkS-fm-Lpk"/>
+                            <constraint firstItem="h3Z-Nt-WWS" firstAttribute="leading" secondItem="Mwu-tp-EGf" secondAttribute="leading" constant="24" id="qkG-ge-Yz6"/>
+                            <constraint firstItem="Mwu-tp-EGf" firstAttribute="trailing" secondItem="fLG-gh-GDY" secondAttribute="trailing" constant="24" id="xRN-jE-MLc"/>
+                            <constraint firstItem="Mwu-tp-EGf" firstAttribute="trailing" secondItem="h3Z-Nt-WWS" secondAttribute="trailing" constant="24" id="z67-GW-BPY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="5K9-Mc-rlS" id="zSD-Um-AGq"/>
+                        <outlet property="loginBtn" destination="fLG-gh-GDY" id="vrN-E5-yxQ"/>
+                        <outlet property="passwordTextField" destination="6Zr-9e-BS9" id="2ay-WB-GTy"/>
+                        <outlet property="signUpBtn" destination="vHK-QV-1fU" id="LsG-42-mlq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6j-Fw-eOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.4122137404579" y="-9.1549295774647899"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="PYm-Ih-6hh">
+            <objects>
+                <viewController storyboardIdentifier="signUpPage" modalPresentationStyle="fullScreen" id="R2W-4Q-ynl" customClass="SignUpViewController" customModule="DayOfPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pkG-Cm-t9u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-1O-ddz">
+                                <rect key="frame" x="24" y="133" width="345" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요! 🐶 🐱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ix-4f-u0S">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="36"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펫다이어리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEu-Dn-dd7">
+                                        <rect key="frame" x="0.0" y="36" width="345" height="36"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입을 해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-gG-EZ1">
+                                        <rect key="frame" x="0.0" y="72" width="345" height="36"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
+                                        <color key="textColor" name="Gray_8"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="HTT-1O-7U9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="108" id="dnO-49-Yie"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="fEk-eV-f7t"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rrb-Bn-FBE">
+                                <rect key="frame" x="24" y="313" width="345" height="256"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-BU-Bco">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R2-Uq-evl">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="Gray_7"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYY-WS-RZD">
+                                                <rect key="frame" x="0.0" y="19.666666666666686" width="345" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="*이메일 형식이 올바르지 않습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O35-QQ-Ov0">
+                                                <rect key="frame" x="0.0" y="59.666666666666693" width="345" height="12.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="ErrorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="O35-QQ-Ov0" firstAttribute="top" secondItem="4R2-Uq-evl" secondAttribute="bottom" constant="44" id="GB5-yH-p9C"/>
+                                            <constraint firstAttribute="height" constant="72" id="rgD-9n-04i"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6nv-GW-fpy">
+                                        <rect key="frame" x="0.0" y="92" width="345" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v6-jY-RE1">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="Gray_7"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-Or-dvA">
+                                                <rect key="frame" x="0.0" y="19.666666666666686" width="345" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="*비밀번호는 영문,숫자 포함하여 8자 이내로 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xy-eI-fvV">
+                                                <rect key="frame" x="0.0" y="57.666666666666693" width="345" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="ErrorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="Vvk-l5-HaA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-ts-7fz">
+                                        <rect key="frame" x="0.0" y="184" width="345" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-54-mSQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="15.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="Gray_7"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-rn-k1Y">
+                                                <rect key="frame" x="0.0" y="19.666666666666629" width="345" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Gray_8"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="*비밀번호가 일치하지 않습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj7-2T-f9M">
+                                                <rect key="frame" x="0.0" y="57.666666666666636" width="345" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
+                                                <color key="textColor" name="ErrorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="gyB-TO-HhR"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fa-Uj-UIn">
+                                <rect key="frame" x="0.0" y="767" width="393" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ucL-Ab-pts">
+                                        <rect key="frame" x="141" y="26.333333333333371" width="111" height="22.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다음페이지" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsT-Wb-Q9u">
+                                                <rect key="frame" x="0.0" y="1.6666666666666288" width="78" height="19.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="78" id="y8i-MQ-Cl8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" name="Gray_4"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paw" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-EB-qHx">
+                                                <rect key="frame" x="86" y="0.0" width="25" height="22.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22.18" id="FjR-Rr-qdl"/>
+                                                    <constraint firstAttribute="width" constant="24.920000000000002" id="nee-1g-d8s"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Gray_2"/>
+                                <constraints>
+                                    <constraint firstItem="ucL-Ab-pts" firstAttribute="centerY" secondItem="3Fa-Uj-UIn" secondAttribute="centerY" constant="-5" id="hCv-uU-Qu2"/>
+                                    <constraint firstAttribute="height" constant="85" id="miR-a2-rWh"/>
+                                    <constraint firstItem="ucL-Ab-pts" firstAttribute="centerX" secondItem="3Fa-Uj-UIn" secondAttribute="centerX" id="qwY-2e-fJi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="ybi-rv-2bJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xbe-aH-6W7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xbe-aH-6W7" firstAttribute="trailing" secondItem="Rrb-Bn-FBE" secondAttribute="trailing" constant="24" id="4XI-0g-DZs"/>
+                            <constraint firstItem="Rrb-Bn-FBE" firstAttribute="top" secondItem="gVJ-1O-ddz" secondAttribute="bottom" constant="72" id="5CM-lS-mJ6"/>
+                            <constraint firstItem="Xbe-aH-6W7" firstAttribute="trailing" secondItem="gVJ-1O-ddz" secondAttribute="trailing" constant="24" id="FNm-h5-N3C"/>
+                            <constraint firstItem="Rrb-Bn-FBE" firstAttribute="leading" secondItem="pkG-Cm-t9u" secondAttribute="leading" constant="24" id="MJJ-mX-uiK"/>
+                            <constraint firstItem="gVJ-1O-ddz" firstAttribute="leading" secondItem="Xbe-aH-6W7" secondAttribute="leading" constant="24" id="RAG-Ck-MVF"/>
+                            <constraint firstItem="gVJ-1O-ddz" firstAttribute="top" secondItem="Xbe-aH-6W7" secondAttribute="top" constant="74" id="T0X-jh-fBP"/>
+                            <constraint firstItem="3Fa-Uj-UIn" firstAttribute="leading" secondItem="pkG-Cm-t9u" secondAttribute="leading" id="nf2-cY-50z"/>
+                            <constraint firstAttribute="bottom" secondItem="3Fa-Uj-UIn" secondAttribute="bottom" id="rtN-jS-uHA"/>
+                            <constraint firstItem="Xbe-aH-6W7" firstAttribute="trailing" secondItem="3Fa-Uj-UIn" secondAttribute="trailing" id="zqE-Cd-jmR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="O35-QQ-Ov0" id="EKd-yZ-1bI"/>
+                        <outlet property="emailTextField" destination="TYY-WS-RZD" id="ZCy-8u-K2O"/>
+                        <outlet property="nextPageBtn" destination="3Fa-Uj-UIn" id="ZH5-Aw-yiB"/>
+                        <outlet property="passwordCfmErrorLabel" destination="yj7-2T-f9M" id="vcm-6K-zGi"/>
+                        <outlet property="passwordCfmTextField" destination="0IZ-rn-k1Y" id="j0k-jo-V7U"/>
+                        <outlet property="passwordErrorLabel" destination="2Xy-eI-fvV" id="hNo-8G-DZj"/>
+                        <outlet property="passwordTextField" destination="lAP-Or-dvA" id="WSh-4d-ZHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naD-Ix-Ri1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730.5343511450383" y="-9.1549295774647899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QA0-q2-aLf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbk-1P-2xw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xkw-Z5-2jl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CmM-hp-OBz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Gray_7"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dvs-v3-MYy"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="-9.1549295774647899"/>
         </scene>
     </scenes>
     <resources>
         <image name="Email" width="27.333333969116211" height="18"/>
         <image name="Kakao" width="25" height="22.333333969116211"/>
+        <image name="Paw" width="20" height="17.333333969116211"/>
         <namedColor name="AccentColor">
-            <color red="0.95294117647058818" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.55699998140335083" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ErrorColor">
+            <color red="0.94099998474121094" green="0.36100000143051147" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray_2">
+            <color red="0.89399999380111694" green="0.89399999380111694" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray_4">
+            <color red="0.66299998760223389" green="0.66299998760223389" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gray_7">
-            <color red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.37299999594688416" green="0.37299999594688416" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gray_8">
-            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
