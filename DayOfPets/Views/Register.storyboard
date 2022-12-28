@@ -42,6 +42,9 @@
                                         <state key="normal" title="건너뛰기">
                                             <color key="titleColor" name="Gray_7"/>
                                         </state>
+                                        <connections>
+                                            <action selector="skipBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6dk-Qh-9k1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -51,6 +54,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstStep" translatesAutoresizingMaskIntoConstraints="NO" id="a3m-HY-BVu">
                                 <rect key="frame" x="0.0" y="77" width="393" height="28"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="T0o-Yh-exb"/>
                                     <constraint firstAttribute="height" constant="28" id="gjf-Zd-M9M"/>
                                 </constraints>
                             </imageView>
@@ -95,23 +99,27 @@
                                     <constraint firstAttribute="height" constant="85" id="fbw-9C-x91"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-Wm-dmJ">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-Wm-dmJ">
                                 <rect key="frame" x="28" y="252" width="341" height="105"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-1y-3mz">
-                                        <rect key="frame" x="0.0" y="0.0" width="289" height="105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="Hs9-NT-Ym6"/>
+                                            <constraint firstAttribute="height" constant="105" id="IfE-dn-8NS"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="guC-b4-dxl">
-                                        <rect key="frame" x="308" y="27.666666666666671" width="33" height="50"/>
+                                        <rect key="frame" x="137" y="27.666666666666686" width="204" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6l-no-TfX">
-                                                <rect key="frame" x="0.0" y="0.0" width="33" height="15.666666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="204" height="15.666666666666666"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
                                                 <color key="textColor" name="Gray_7"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yRX-Qw-3Jk">
-                                                <rect key="frame" x="0.0" y="15.666666666666668" width="33" height="34.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666632" width="204" height="34.333333333333343"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" name="Gray_8"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
@@ -124,11 +132,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44q-2t-kj3">
-                                <rect key="frame" x="146" y="399" width="136" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="집사 구성원 추가"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44q-2t-kj3">
+                                <rect key="frame" x="24" y="399" width="345" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="i40-VN-2qn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="집사 구성원 추가">
+                                    <color key="titleColor" name="Gray_7"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -144,8 +157,12 @@
                             <constraint firstItem="WQq-DY-RCY" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="LJL-Fk-6Ye"/>
                             <constraint firstItem="a3m-HY-BVu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ln4-Z8-eQa"/>
                             <constraint firstAttribute="trailing" secondItem="N7s-tc-2qk" secondAttribute="trailing" constant="16" id="Mqu-No-mfz"/>
+                            <constraint firstItem="44q-2t-kj3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Xez-Ol-Loc"/>
                             <constraint firstAttribute="bottom" secondItem="WQq-DY-RCY" secondAttribute="bottom" id="bJe-Qn-fPL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="44q-2t-kj3" secondAttribute="trailing" constant="24" id="djg-Jb-wKP"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WQq-DY-RCY" secondAttribute="trailing" id="hDe-AU-mzn"/>
+                            <constraint firstItem="44q-2t-kj3" firstAttribute="top" secondItem="cxo-Wm-dmJ" secondAttribute="bottom" constant="42" id="pP3-hi-fex"/>
+                            <constraint firstItem="cxo-Wm-dmJ" firstAttribute="top" secondItem="5fj-jV-Uos" secondAttribute="bottom" constant="42" id="xaR-N7-nUV"/>
                             <constraint firstItem="N7s-tc-2qk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yiw-aE-whr"/>
                         </constraints>
                     </view>
@@ -157,6 +174,10 @@
                             <color key="tintColor" name="Gray_7"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addFamilyBtn" destination="44q-2t-kj3" id="6fq-Lm-TCS"/>
+                        <outlet property="backBtn" destination="Xg4-6b-p1X" id="bVL-La-NTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -27,169 +27,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-Oa-7Jp">
-                                <rect key="frame" x="24" y="177" width="345" height="145"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리 반려동물을 위한" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neD-US-Sef">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="36.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
-                                        <color key="textColor" name="Gray_8"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기록습관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-XA-OaH">
-                                        <rect key="frame" x="0.0" y="36.333333333333343" width="345" height="36.333333333333343"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
-                                        <color key="textColor" name="Gray_8"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-VD-Wu3">
-                                        <rect key="frame" x="0.0" y="72.666666666666657" width="345" height="36"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펫다이어리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-Lv-12t">
-                                                <rect key="frame" x="0.0" y="0.0" width="121" height="36"/>
-                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="28"/>
-                                                <color key="textColor" name="Gray_8"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0U-PZ-mj4">
-                                                <rect key="frame" x="121" y="0.0" width="224" height="36"/>
-                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
-                                                <color key="textColor" name="Gray_8"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오신것을 환영해요 🐶 🐱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1D-ML-e06">
-                                        <rect key="frame" x="0.0" y="108.66666666666669" width="345" height="36.333333333333343"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="28"/>
-                                        <color key="textColor" name="Gray_8"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="AnJ-0u-9mn"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="145" id="WkA-7z-gdL"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-Zh-tXQ">
-                                <rect key="frame" x="19" y="717" width="355" height="56"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="nPB-gK-grb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="초대코드 입력하기"/>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-oF-kjH">
-                                <rect key="frame" x="19" y="410.66666666666669" width="355" height="128.00000000000006"/>
-                                <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSP-c0-fi2">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9jd-GT-aYp">
-                                                <rect key="frame" x="37" y="17" width="281" height="22"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kakao" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-GF-l7L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="24.920000000000002" id="VOr-RD-m1D"/>
-                                                            <constraint firstAttribute="height" constant="22.18" id="eUF-2s-vdG"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오로 시작하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-q1-jMo">
-                                                        <rect key="frame" x="25" y="1.3333333333333144" width="256" height="19.333333333333332"/>
-                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
-                                                        <color key="textColor" red="0.25882352939999997" green="0.15686274510000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.97647058819999999" green="0.87450980389999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="9jd-GT-aYp" firstAttribute="leading" secondItem="qSP-c0-fi2" secondAttribute="leading" constant="37" id="Ekr-Q6-v3a"/>
-                                            <constraint firstAttribute="trailing" secondItem="9jd-GT-aYp" secondAttribute="trailing" constant="37" id="Ix9-Yo-rtp"/>
-                                            <constraint firstItem="9jd-GT-aYp" firstAttribute="centerY" secondItem="qSP-c0-fi2" secondAttribute="centerY" id="bJR-iF-Q4y"/>
-                                            <constraint firstAttribute="height" constant="56" id="gnX-lQ-OBL"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db2-Ea-Y73">
-                                        <rect key="frame" x="0.0" y="72" width="355" height="56"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pp5-L1-rua">
-                                                <rect key="frame" x="37" y="17" width="281" height="22"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="yEU-EU-5A2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="24.920000000000002" id="3Uq-Bf-wEb"/>
-                                                            <constraint firstAttribute="height" constant="22.18" id="O5D-w7-xr6"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일로 로그인하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lv-FY-cZ0">
-                                                        <rect key="frame" x="25" y="1.3333333333333144" width="256" height="19.333333333333332"/>
-                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
-                                                        <color key="textColor" name="Gray_8"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Pp5-L1-rua" secondAttribute="trailing" constant="37" id="Dl7-9L-Yyp"/>
-                                            <constraint firstItem="Pp5-L1-rua" firstAttribute="centerY" secondItem="db2-Ea-Y73" secondAttribute="centerY" id="cO0-E7-HPr"/>
-                                            <constraint firstAttribute="height" constant="56" id="gfk-Oi-14C"/>
-                                            <constraint firstItem="Pp5-L1-rua" firstAttribute="leading" secondItem="db2-Ea-Y73" secondAttribute="leading" constant="37" id="uHQ-jx-2FK"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="BXM-Zv-OIC">
-                                <rect key="frame" x="107.00000000000001" y="554.66666666666663" width="179.33333333333337" height="15.666666666666629"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud8-DY-pyO">
-                                        <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="15.666666666666666"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="13"/>
-                                        <color key="textColor" name="Gray_7"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-Zn-byd">
-                                        <rect key="frame" x="134.33333333333334" y="0.0" width="45" height="15.666666666666666"/>
-                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="13"/>
-                                        <color key="textColor" name="Gray_8"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fvf-Zh-tXQ" secondAttribute="bottom" constant="45" id="4CE-zR-EQI"/>
-                            <constraint firstItem="BXM-Zv-OIC" firstAttribute="centerX" secondItem="yhB-oF-kjH" secondAttribute="centerX" id="Ea8-2P-N5d"/>
-                            <constraint firstItem="Nv3-Oa-7Jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="QSZ-Y8-0mM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yhB-oF-kjH" secondAttribute="trailing" constant="19" id="TkT-Cd-24x"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yr5-4H-WZN"/>
-                            <constraint firstItem="Nv3-Oa-7Jp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="aDR-RM-5qv"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="19" id="fDe-sw-W8v"/>
-                            <constraint firstItem="BXM-Zv-OIC" firstAttribute="top" secondItem="yhB-oF-kjH" secondAttribute="bottom" constant="16" id="lSJ-F3-kaP"/>
-                            <constraint firstItem="yhB-oF-kjH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="m8x-aE-9Rb"/>
-                            <constraint firstItem="yhB-oF-kjH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="410.66666666666674" id="mSJ-Iy-ujl"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-19" id="qUK-bJ-U4d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nv3-Oa-7Jp" secondAttribute="trailing" constant="24" id="qVC-7U-IJs"/>
-                            <constraint firstItem="fvf-Zh-tXQ" firstAttribute="centerX" secondItem="Nv3-Oa-7Jp" secondAttribute="centerX" id="xbI-Ri-btZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yeF-iW-yHI"/>
-                    <connections>
-                        <outlet property="emailLoginBtn" destination="db2-Ea-Y73" id="9hk-KD-R5h"/>
-                        <outlet property="invitationCodeBtn" destination="fvf-Zh-tXQ" id="z3n-fS-3Gp"/>
-                        <outlet property="kakaoLoginBtn" destination="qSP-c0-fi2" id="VFy-jR-70g"/>
-                        <outlet property="signUpBtn" destination="JFr-Zn-byd" id="qSE-4P-zrB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -541,7 +382,6 @@
         <!--Navigation Controller-->
         <scene sceneID="QA0-q2-aLf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cbk-1P-2xw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xkw-Z5-2jl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CmM-hp-OBz">
@@ -556,13 +396,12 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dvs-v3-MYy"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbk-1P-2xw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.946564885496173" y="-9.1549295774647899"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Email" width="27.333333969116211" height="18"/>
-        <image name="Kakao" width="25" height="22.333333969116211"/>
         <image name="Paw" width="20" height="17.333333969116211"/>
         <namedColor name="AccentColor">
             <color red="0.95300000905990601" green="0.55699998140335083" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

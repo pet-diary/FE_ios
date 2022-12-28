@@ -30,6 +30,9 @@
 		CD3889F62941DDA500638AE1 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CD3889ED2941DDA500638AE1 /* Pretendard-SemiBold.otf */; };
 		CD3889F72941DDA500638AE1 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CD3889EE2941DDA500638AE1 /* Pretendard-ExtraBold.otf */; };
 		CD3889FA2941ED0F00638AE1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3889F92941ED0F00638AE1 /* Color.swift */; };
+		CD76BD03295A95B2006556AC /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76BD02295A95B2006556AC /* LandingViewController.swift */; };
+		CD76BD05295A9BD0006556AC /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76BD04295A9BD0006556AC /* Font.swift */; };
+		CD76BD08295AC563006556AC /* ViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76BD07295AC563006556AC /* ViewComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		CD3889ED2941DDA500638AE1 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		CD3889EE2941DDA500638AE1 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		CD3889F92941ED0F00638AE1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CD76BD02295A95B2006556AC /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		CD76BD04295A9BD0006556AC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		CD76BD07295AC563006556AC /* ViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		CD3889E32941DC2B00638AE1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CD76BD01295A958A006556AC /* Onboarding */,
 				CD345A7A2953FB08006E152F /* Register */,
 				CD345A6B2952D744006E152F /* Main */,
 			);
@@ -178,6 +185,7 @@
 				CD3889EC2941DDA500638AE1 /* Pretendard-Regular.otf */,
 				CD3889ED2941DDA500638AE1 /* Pretendard-SemiBold.otf */,
 				CD3889E92941DDA500638AE1 /* Pretendard-Thin.otf */,
+				CD76BD04295A9BD0006556AC /* Font.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -188,6 +196,23 @@
 				CD3889F92941ED0F00638AE1 /* Color.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		CD76BD01295A958A006556AC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CD76BD06295AC545006556AC /* Landing */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CD76BD06295AC545006556AC /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				CD76BD02295A95B2006556AC /* LandingViewController.swift */,
+				CD76BD07295AC563006556AC /* ViewComponents.swift */,
+			);
+			path = Landing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,14 +298,17 @@
 			files = (
 				CD345A712952D7A0006E152F /* SignUpViewController.swift in Sources */,
 				CD345A7C2953FB34006E152F /* UserViewController.swift in Sources */,
+				CD76BD03295A95B2006556AC /* LandingViewController.swift in Sources */,
 				CD345A6F2952D790006E152F /* EmailLoginViewController.swift in Sources */,
 				CD3889D22941DAE800638AE1 /* ViewController.swift in Sources */,
 				CD345A7E295421BF006E152F /* PetViewController.swift in Sources */,
 				CD345A772952E3C0006E152F /* TextField.swift in Sources */,
 				CD345A752952DE4A006E152F /* Layer.swift in Sources */,
+				CD76BD05295A9BD0006556AC /* Font.swift in Sources */,
 				CD3889FA2941ED0F00638AE1 /* Color.swift in Sources */,
 				CD3889CE2941DAE800638AE1 /* AppDelegate.swift in Sources */,
 				CD3889D02941DAE800638AE1 /* SceneDelegate.swift in Sources */,
+				CD76BD08295AC563006556AC /* ViewComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
